@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT FAVORITES </title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="js/main.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <div id="app">
+    
+    <header>
+        <h1><img src="./img/Gitfav.svg" alt="Icon respective to Gitfav"></h1>
+    <div class="search">
+        <label class="sr-only" for="github-search"></label>
+    
+    <input id="github-search" type="text" placeholder="Enter the Github username you want to bookmark">
+    <button class="addButton"><img src="./img/Button.png" alt="Botão para favoritar"></button>
+    <button class="hidden addButtonHover"><img src="./img/ButtonHover.png" alt="Botão para favoritar"></button>
+    </div>
+   </header> 
+
+   <table>
+    <thead>
+        <tr>
+            <th>Users</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="user">
+                <img src="https://github.com/MvriloNascimento.png" alt="Imagem de perfil">
+                <a href="https://github.com.MvriloNascimento" target="_blank">
+                    <p>Murilo Nascimento</p>
+                    <span>MvriloNascimento</span>
+                </a>
+            </td>
+        <td class="repositories">
+            17
+        </td>
+        <td class="followers">
+            1
+        </td>
+        <td>
+            <button class="remove">Remove</button>
+        </td>
+        </tr>
+
+    <tr>
+    <td class="user">
+        <img src="https://github.com/maykbrito.png" alt="Imagem de perfil">
+        <a href="https://github.com.maykbrito" target="_blank">
+            <p>Maiky Brito</p>
+            <span>maykbrito</span>
+        </a>
+    </td>
+    <td class="Repositories">
+        48
+    </td>
+    <td class="followers">
+        22503
+    </td>
+    <td>
+        <button class="remove">Remover</button>
+    </td>
+    </tr>
+
+    <div class="noLine hidden">
+        <div class="noFavorites">
+          <div class="star">
+            <img src="./img/Estrela.png" alt="">
+            <p class="pStar">Nenhum favorito na lista</p>
+            </div>
+            </div>
+            </div>
+    </tbody>
+   </table>
+</div>
+
+</body>
+</html>
